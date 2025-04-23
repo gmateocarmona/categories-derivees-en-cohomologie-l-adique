@@ -1,4 +1,4 @@
-name: Build and Deploy LaTeX PDF
+name: Build and Deploy LaTeX PDF 
 
 on:
   push:
@@ -8,17 +8,19 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: docker://blang/latex:ubuntu
+    container: ghcr.io/xu-cheng/texlive-full:latest  # Updated LaTeX image
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4  
 
-      - name: Compile LaTeX
-        run: xelatex -interaction=nonstopmode main.tex
+      - name: Compile LaTeX (Multiple Runs for ToC)
+        run: |
+          xelatex -interaction=nonstopmode main.tex
+          xelatex -interaction=nonstopmode main.tex  # Run twice to fix ToC issues
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4  
         with:
           name: pdf_file
           path: main.pdf
@@ -30,28 +32,27 @@ jobs:
 
     steps:
       - name: Set variables
-        id: vars
         run: |
           echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           echo "SHA8=$(echo ${GITHUB_SHA} | cut -c1-8)" >> $GITHUB_ENV
 
-      - name: Download artifacts
-        uses: actions/download-artifact@v2
+      - name: Download PDF Artifact
+        uses: actions/download-artifact@v4  
         with:
           name: pdf_file
 
-      - name: Create release
+      - name: Create GitHub Release
         uses: actions/create-release@v1
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: main-${{ env.DATE }}-${{ env.SHA8 }}
-          release_name: Automatic build (version ${{ env.DATE }})
+          release_name: "Automatic PDF Build (${{ env.DATE }})"
           draft: false
           prerelease: false
 
-      - name: Upload PDF asset
+      - name: Upload PDF to Release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
