@@ -34,7 +34,7 @@ q: \underline{\Hom}(N^\circ, A-\Mod_X) \to \underline{\Hom}_1(N^\circ, A-\Mod_X)
 $$
 qui est une bijection sur les objets.
 \vskip .3cm
-{\bf 2.2}. Soient maintenant $M$ un objet de $\mathcal{E}(X, J)$ et $\gamma \geq \id: \mathbf{N} \to \mathbf{N}$ une application croissante. On définit un nouvel objet $\chi_\gamma(M)$ de $\mathcal{E}(X, J)$, fonctoriel en $M$, par
+{\bf 2.2}. Soient maintenant $M$ un objet de $\mathscr{E}(X, J)$ et $\gamma \geq \id: \mathbf{N} \to \mathbf{N}$ une application croissante. On définit un nouvel objet $\chi_\gamma(M)$ de $\mathscr{E}(X, J)$, fonctoriel en $M$, par
 $$
 (\chi_\gamma (M))_n = M_{\gamma(n)}/J^{n+1}M_{\gamma(n)} \quad (n \geq 0),
 $$
@@ -42,10 +42,10 @@ avec les morphismes de transition évidents. De plus, si $\delta$ est une applic
 $$
 \chi_\delta (M) \to \chi_\gamma (M).
 $$
-Ceci permet de définir une nouvelle catégorie $\mathcal{E}_1(X, J)$ comme suit.
+Ceci permet de définir une nouvelle catégorie $\mathscr{E}_1(X, J)$ comme suit.
 \begin{itemize}
-    \item[(i)] Ses objets sont ceux de $\mathcal{E}(X, J)$.
-    \item[(ii)] Si $M$ et $N$ sont deux objets de $\mathcal{E}(X, J)$, l'ensemble des $\mathcal{E}_1(X, J)$-morphismes de $M$ dans $N$ est
+    \item[(i)] Ses objets sont ceux de $\mathscr{E}(X, J)$.
+    \item[(ii)] Si $M$ et $N$ sont deux objets de $\mathscr{E}(X, J)$, l'ensemble des $\mathscr{E}_1(X, J)$-morphismes de $M$ dans $N$ est
     $$
     \Hom_1(M, N) = \varinjlim_\gamma \Hom(\chi_\gamma(M), N),
     $$
@@ -53,13 +53,13 @@ Ceci permet de définir une nouvelle catégorie $\mathcal{E}_1(X, J)$ comme suit
 \end{itemize}
 De même que précédemment, on a un foncteur projection
 $$
-q: \mathcal{E}(X, J) \to \mathcal{E}_1(X, J).
+q: \mathscr{E}(X, J) \to \mathscr{E}_1(X, J).
 $$
 
-Il est clair que la catégorie $\mathcal{E}_1(X, J)$ s'identifie à la sous-catégorie pleine de $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ engendrée pas les $A$-faisceaux, et que le diagramme
+Il est clair que la catégorie $\mathscr{E}_1(X, J)$ s'identifie à la sous-catégorie pleine de $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ engendrée pas les $A$-faisceaux, et que le diagramme
 \[\begin{tikzcd}
 	{\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)} && {\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)} \\
-	{\mathcal{E}(X, J)} && {\mathcal{E}_1(X, J),}
+	{\mathscr{E}(X, J)} && {\mathscr{E}_1(X, J),}
 	\arrow["q", from=1-1, to=1-3]
 	\arrow["q", from=2-1, to=2-3]
 	\arrow[hook', from=2-1, to=1-1]
@@ -67,10 +67,10 @@ Il est clair que la catégorie $\mathcal{E}_1(X, J)$ s'identifie à la sous-cat�
 \end{tikzcd}\]
 dans lequel les flèches verticales sont les inclusions canoniques, est commutatif.
 
-Enfin, on vérifie, comme dans (SGA5 V 2.4.1), que la famille des flèches canoniques du type $\chi_\gamma(M) \to M$ permet un calcul de fractions à droite, ce qui permet d'identifier $\mathcal{E}_1(X, J)$ à la catégorie obtenue à partir de $\mathcal{E}(X, J)$ en inversant ces flèches.
+Enfin, on vérifie, comme dans (SGA5 V 2.4.1), que la famille des flèches canoniques du type $\chi_\gamma(M) \to M$ permet un calcul de fractions à droite, ce qui permet d'identifier $\mathscr{E}_1(X, J)$ à la catégorie obtenue à partir de $\mathscr{E}(X, J)$ en inversant ces flèches.
 \vskip .3cm
 {
-Lemme {\bf 2.3}. --- \it La catégorie $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ (resp. $\mathcal{E}_1(X, J)$) est abélienne et le foncteur $q$ est exact.
+Lemme {\bf 2.3}. --- \it La catégorie $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ (resp. $\mathscr{E}_1(X, J)$) est abélienne et le foncteur $q$ est exact.
 }
 \vskip .3cm
 Preuve~: Montrons tout d'abord l'assertion non respée. Il est évident que la catégorie $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est additive et que le foncteur $q$ rend inversibles toutes les flèches canoniques de la forme $c_\gamma(M) \to M$. Si $u: P \to Q$ est un élément de $\Hom_1(P, Q)$, alors $u$ est la classe d'une flèche $f: c_\gamma (P) \to Q$ et, en notant $c: c_\gamma (P) \to P$ la flèche canonique, on a donc $u = q(f) \circ q(c)^{-1}$ ; par suite, toute flèche de $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est isomorphe à l'image par $q$ d'une flèche de $\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)$. Il en résulte que pour voir que $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est abélienne, il suffit de montrer que le foncteur $q$ est exact. Soient donc $P$ et
@@ -103,9 +103,9 @@ $$
 $$
 d'où un foncteur
 $$
-\delta: \mathcal{E}_1(X, J) \to \Pro(A-\Mod_X),
+\delta: \mathscr{E}_1(X, J) \to \Pro(A-\Mod_X),
 $$
-obtenu par restriction de $\rho$ à $\mathcal{E}_1(X, J)$.
+obtenu par restriction de $\rho$ à $\mathscr{E}_1(X, J)$.
 \vskip .3cm
 {
 Lemme {\bf 2.5}. --- \it Les foncteurs $\rho$ et $\delta$ ci-dessus sont des injections sur les objets et sont pleinement fidèles.
@@ -180,9 +180,9 @@ $$
 $$
 répond à la question.
 \vskip .3cm
-{\bf 2.6}. Supposons maintenant que l'objet final de $X$ soit quasicompact. Il est clair que le foncteur $q: \mathcal{E}(X, J) \to \mathcal{E}_1(X, J)$ envoie sur $O$ les $A$-faisceaux essentiellement nuls, ou, ce qui renvient au même négligeables. D'après la propriété universelle des catégories abéliennes quotients (Thèse Gabriel III 1 Cor.2), il admet donc une factorisation unique
+{\bf 2.6}. Supposons maintenant que l'objet final de $X$ soit quasicompact. Il est clair que le foncteur $q: \mathscr{E}(X, J) \to \mathscr{E}_1(X, J)$ envoie sur $O$ les $A$-faisceaux essentiellement nuls, ou, ce qui renvient au même négligeables. D'après la propriété universelle des catégories abéliennes quotients (Thèse Gabriel III 1 Cor.2), il admet donc une factorisation unique
 \[\begin{tikzcd}
-	{\mathcal{E}(X, J)} && {\mathcal{E}_1(X, J)}\arrow["{\overline{q}}"', from=2-2, to=1-3] \\
+	{\mathscr{E}(X, J)} && {\mathscr{E}_1(X, J)}\arrow["{\overline{q}}"', from=2-2, to=1-3] \\
 	& {A-\fsc(X)}
 	\arrow["q", from=1-1, to=1-3]	
 	\arrow["{\pi_X}"', from=1-1, to=2-2]
@@ -193,9 +193,9 @@ avec $\overline{q}$ un foncteur exact et $\pi_X$ le foncteur canonique de passag
 Lemme {\bf 2.7}. --- \it Le foncteur $\overline{q}$ ci-dessus est un isomorphisme de catégories.
 }
 \vskip .3cm
-Preuve~: Tenant compte de l'interprétation de $\mathcal{E}_1(X, J)$ comme catégorie de fractions (2.2), il s'agit de voir que si $C$ est une catégorie abélienne et
+Preuve~: Tenant compte de l'interprétation de $\mathscr{E}_1(X, J)$ comme catégorie de fractions (2.2), il s'agit de voir que si $C$ est une catégorie abélienne et
 $$
-F: \mathcal{E}(X, J) \to C
+F: \mathscr{E}(X, J) \to C
 $$
 un foncteur exact, les assertions suivantes sont équivalentes :
 \begin{itemize}
@@ -207,7 +207,7 @@ Si $M$ est un $A$-faisceau essentiellement nul, il existe une application croiss
 Si $P$ et $Q$ sont définis par l'exactitude de la suite
 $0 \to P \to \chi_\gamma(M) \xlongrightarrow{\can} M \to Q \to 0$, il est immédiat que les morphismes canoniques $\chi_\gamma(P) \to P$ et $\chi_\gamma(Q) \to Q$ sont nuls, d'où aussitôt l'assertion.
 \vskip .3cm
-{\bf Remarque 2.7.1}. Plus généralement, l'argument précédent montre, sans hypothèse sur $X$, que $\mathcal{E}_1(X, J)$ est la catégorie abélienne quotient de $\mathcal{E}(X, J)$ par la sous-catégorie, abélienne engendrée par les $A$-faisceaux essentiellement nuls. On en déduit grâce à la description des morphismes d'une catégorie abélienne quotient, que tout morphisme (resp. isomorphisme) de $A-\fsc(X)$ est localement l'image d'un morphisme de $\mathcal{E}(X, J)$.
+{\bf Remarque 2.7.1}. Plus généralement, l'argument précédent montre, sans hypothèse sur $X$, que $\mathscr{E}_1(X, J)$ est la catégorie abélienne quotient de $\mathscr{E}(X, J)$ par la sous-catégorie, abélienne engendrée par les $A$-faisceaux essentiellement nuls. On en déduit grâce à la description des morphismes d'une catégorie abélienne quotient, que tout morphisme (resp. isomorphisme) de $A-\fsc(X)$ est localement l'image d'un morphisme de $\mathscr{E}(X, J)$.
 \vskip .3cm
 {
 Proposition {\bf 2.8}. --- \it Soit $(X, A, J)$ un idéotope. On suppose que l'objet final de $X$ est quasicompact. Alors le foncteur canonique
