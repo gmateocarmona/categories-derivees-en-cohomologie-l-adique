@@ -8,7 +8,7 @@
 On se propose maintenant de donner un certain nombre de catégories équivalentes à $A-\fsc(X)$, lorsque l'objet final de $X$ est quasicompact. Nous aurons besoin pour cela d'un certain nombre de lemmes techniques, dont la plupart n'utilisent pas cette hypothèse.
 
 \vskip .3cm
-{\bf 2.1}. Soit $(X, A, J)$ un idéotope. Étant donnés un objet $M$ de $\underline{\Hom}(N^\circ, A-\Mod_X)$, et une application croissante $\gamma \geq \id: \mathbf{N} \to \mathbf{N}$, on définit un nouveau système projectif $c_\gamma(M)$ en posant
+{\bf 2.1}. Soit $(X, A, J)$ un idéotope. Étant donnés un objet $M$ de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$, et une application croissante $\gamma \geq \id: \mathbf{N} \to \mathbf{N}$, on définit un nouveau système projectif $c_\gamma(M)$ en posant
 $$
 c_\gamma(M)_n = M_{\gamma(n)} \quad (n \geq 0),
 $$
@@ -18,19 +18,19 @@ c_\delta(M) \to c_\gamma(M).
 $$
 Ceci permet de définir une nouvelle catégorie, notée
 $$
-\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X), \quad \text{comme suit}.
+\bHom_1(\mathbf{N}^\circ, A-\Mod_X), \quad \text{comme suit}.
 $$
 \begin{itemize}
-    \item[(i)] Ses objets sont ceux de $\underline{\Hom}(N^\circ, A-\Mod_X)$. 
-    \item[(ii)] Si $M$ et $M'$ sont deux objets de $\underline{\Hom}(N^\circ, A-\Mod_X)$, l'ensemble des morphismes de $M$ dans $M'$ est
+    \item[(i)] Ses objets sont ceux de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$. 
+    \item[(ii)] Si $M$ et $M'$ sont deux objets de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$, l'ensemble des morphismes de $M$ dans $M'$ est
     $$
     \Hom_1(M, M') = \varinjlim_\gamma \Hom(c_\gamma(M), M'),
     $$
     avec la loi de composition évidente.
 \end{itemize}
-Il est clair qu'un morphisme de $\underline{\Hom}(N^\circ, A-\Mod_X)$ définit un morphisme de $\underline{\Hom}_1(N^\circ, A-\Mod_X)$, d'où un foncteur ``projection''
+Il est clair qu'un morphisme de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$ définit un morphisme de $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$, d'où un foncteur ``projection''
 $$
-q: \underline{\Hom}(N^\circ, A-\Mod_X) \to \underline{\Hom}_1(N^\circ, A-\Mod_X),
+q: \bHom(\mathbf{N}^\circ, A-\Mod_X) \to \bHom_1(\mathbf{N}^\circ, A-\Mod_X),
 $$
 qui est une bijection sur les objets.
 \vskip .3cm
@@ -56,9 +56,9 @@ $$
 q: \mathscr{E}(X, J) \to \mathscr{E}_1(X, J).
 $$
 
-Il est clair que la catégorie $\mathscr{E}_1(X, J)$ s'identifie à la sous-catégorie pleine de $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ engendrée pas les $A$-faisceaux, et que le diagramme
+Il est clair que la catégorie $\mathscr{E}_1(X, J)$ s'identifie à la sous-catégorie pleine de $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ engendrée pas les $A$-faisceaux, et que le diagramme
 \[\begin{tikzcd}
-	{\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)} && {\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)} \\
+	{\bHom(\mathbf{N}^\circ, A-\Mod_X)} && {\bHom_1(\mathbf{N}^\circ, A-\Mod_X)} \\
 	{\mathscr{E}(X, J)} && {\mathscr{E}_1(X, J),}
 	\arrow["q", from=1-1, to=1-3]
 	\arrow["q", from=2-1, to=2-3]
@@ -70,14 +70,14 @@ dans lequel les flèches verticales sont les inclusions canoniques, est commutat
 Enfin, on vérifie, comme dans (SGA5 V 2.4.1), que la famille des flèches canoniques du type $\chi_\gamma(M) \to M$ permet un calcul de fractions à droite, ce qui permet d'identifier $\mathscr{E}_1(X, J)$ à la catégorie obtenue à partir de $\mathscr{E}(X, J)$ en inversant ces flèches.
 \vskip .3cm
 {
-Lemme {\bf 2.3}. --- \it La catégorie $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ (resp. $\mathscr{E}_1(X, J)$) est abélienne et le foncteur $q$ est exact.
+Lemme {\bf 2.3}. --- \it La catégorie $\Hom_1(\mathbf{N}^\circ, A-\Mod_X)$ (resp. $\mathscr{E}_1(X, J)$) est abélienne et le foncteur $q$ est exact.
 }
 \vskip .3cm
-Preuve~: Montrons tout d'abord l'assertion non respée. Il est évident que la catégorie $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est additive et que le foncteur $q$ rend inversibles toutes les flèches canoniques de la forme $c_\gamma(M) \to M$. Si $u: P \to Q$ est un élément de $\Hom_1(P, Q)$, alors $u$ est la classe d'une flèche $f: c_\gamma (P) \to Q$ et, en notant $c: c_\gamma (P) \to P$ la flèche canonique, on a donc $u = q(f) \circ q(c)^{-1}$ ; par suite, toute flèche de $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est isomorphe à l'image par $q$ d'une flèche de $\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)$. Il en résulte que pour voir que $\underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est abélienne, il suffit de montrer que le foncteur $q$ est exact. Soient donc $P$ et
+Preuve~: Montrons tout d'abord l'assertion non respée. Il est évident que la catégorie $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est additive et que le foncteur $q$ rend inversibles toutes les flèches canoniques de la forme $c_\gamma(M) \to M$. Si $u: P \to Q$ est un élément de $\Hom_1(P, Q)$, alors $u$ est la classe d'une flèche $f: c_\gamma (P) \to Q$ et, en notant $c: c_\gamma (P) \to P$ la flèche canonique, on a donc $u = q(f) \circ q(c)^{-1}$ ; par suite, toute flèche de $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est isomorphe à l'image par $q$ d'une flèche de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$. Il en résulte que pour voir que $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est abélienne, il suffit de montrer que le foncteur $q$ est exact. Soient donc $P$ et
 $$
 0 \to M' \to M \to M'' \to 0
 $$
-respectivement un objet et une suite exacte de $\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)$.
+respectivement un objet et une suite exacte de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$.
 
 Comme les foncteurs $c_\gamma$ sont exacts et les limites inductives filtrantes de groupes abéliens sont exactes, les suites évidentes
 $$
@@ -89,17 +89,17 @@ $$
 $$
 sont exactes, d'où l'assertion. L'assertion respée se voit de fa\c{c}on analogue; en fait, on montre en même temps que le foncteur d'inclusion
 $$
-\mathscr{E}_1(X, J) \to \underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X)
+\mathscr{E}_1(X, J) \to \bHom_1(\mathbf{N}^\circ, A-\Mod_X)
 $$
 est exact
 \vskip .3cm
-{\bf 2.4}. Soient $P$ et $Q$ deux objets de $\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)$, $\gamma \geq \id$ une application croissante de $\mathbf{N}$ dans $\mathbf{N}$ et $f: c_\gamma(P) \to Q$ un morphisme de systèmes projectifs. Désignant pour tout $n \in \mathbf{N}$ par $\xi_n$ la classe de $f_n$ dans $\varinjlim_m \Hom(P_m, Q_n)$, il est clair que l'ensemble des $\xi_n$ $(n \in \mathbf{N})$ définit un élément de 
+{\bf 2.4}. Soient $P$ et $Q$ deux objets de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$, $\gamma \geq \id$ une application croissante de $\mathbf{N}$ dans $\mathbf{N}$ et $f: c_\gamma(P) \to Q$ un morphisme de systèmes projectifs. Désignant pour tout $n \in \mathbf{N}$ par $\xi_n$ la classe de $f_n$ dans $\varinjlim_m \Hom(P_m, Q_n)$, il est clair que l'ensemble des $\xi_n$ $(n \in \mathbf{N})$ définit un élément de 
 $$
 \varprojlim_n \varinjlim_m \Hom(P_m, Q_n),
 $$
 qui ne dépend que de la classe de $f$ dans $\Hom_1(P, Q)$. On définit ainsi un foncteur
 $$
-\rho: \underline{\Hom}_1(\mathbf{N}^\circ, A-\Mod_X) \to \Pro(A-\Mod_X),
+\rho: \bHom_1(\mathbf{N}^\circ, A-\Mod_X) \to \Pro(A-\Mod_X),
 $$
 d'où un foncteur
 $$
@@ -111,7 +111,7 @@ obtenu par restriction de $\rho$ à $\mathscr{E}_1(X, J)$.
 Lemme {\bf 2.5}. --- \it Les foncteurs $\rho$ et $\delta$ ci-dessus sont des injections sur les objets et sont pleinement fidèles.
 }
 \vskip .3cm
-Preuve~: Il suffit de le voir pour $\rho$. Dans ce cas, la seule assertion non tautologique est que $\rho$ est pleinement fidèle. Soient donc $P$ et $Q$ deux objets de $\underline{\Hom}(\mathbf{N}^\circ, A-\Mod_X)$, et montrons que l'application canonique
+Preuve~: Il suffit de le voir pour $\rho$. Dans ce cas, la seule assertion non tautologique est que $\rho$ est pleinement fidèle. Soient donc $P$ et $Q$ deux objets de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$, et montrons que l'application canonique
 $$
 \varinjlim_\gamma \Hom(c_\gamma(P), Q) \to \varprojlim_n \varinjlim_m \Hom(P_m, Q_n)
 $$
