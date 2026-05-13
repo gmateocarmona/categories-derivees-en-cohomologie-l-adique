@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 \documentclass[12pt,twoside]{report} %openright
 	%\usepackage[utf8]{inputenc}
  	\usepackage[greek,english]{babel}
@@ -320,13 +321,21 @@ DIXMIER & \\
 %\end{flushright}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage 
+\thispagestyle{empty}
+
+\null\vfill
+\noindent\begin{minipage}{\textwidth}
+This project, involving the transcription of J.-P. Jouanolou's thesis, was conducted with his authorization. It was carried out under the direction of Mateo Carmona, with the collaboration of Niels Borne and other volunteers. The transcription aims to be as faithful as possible to the original. This edition should be regarded as provisional; remarks, comments, and corrections are welcome. More details are available at: \url{https://github.com/gmateocarmona/categories-derivees-en-cohomologie-l-adique}
+\end{minipage}
+
 \newpage
 \thispagestyle{empty}
 \mbox{}
 
 %\pagestyle{fancyplain}
 
-\renewcommand{\contentsname}{SOMMAIRE}
+\renewcommand{\contentsname}{TABLE DES MATIÈRES}
 \tableofcontents\thispagestyle{empty}
 
 \setcounter{page}{1}
