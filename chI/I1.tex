@@ -4,7 +4,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{\S \space I. --- CATÉGORIES DES FAISCEAUX SUR UN IDÉOTOPE}
 \addcontentsline{toc}{section}{I. Catégorie des faisceaux sur un idéotope}
-\label{ch:1}
 \section*{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -12,7 +11,7 @@
 \addcontentsline{toc}{subsection}{1. Généralités}
 
 {
-Définition {\bf 1.1}. --- \it On appelle \emph{idéotope} un triple $(X, A, J)$ formé d'un topos $X$, d'un anneau commutatif unifère $A$ et d'un idéal propre $J$ de $A$.
+Définition {\bf 1.1}. --- \it On appelle \textup{idéotope} un triple $(X, A, J)$ formé d'un topos $X$, d'un anneau commutatif unifère $A$ et d'un idéal propre $J$ de $A$.
 }
 \vskip .3cm
 On suppose donné dans la suite du paragraphe un idéotope $(X, A, J)$. On note $A-\Mod_X$ la catégorie des faisceaux de $A_X$-Modules et 
@@ -39,7 +38,7 @@ $$
 $$
 ($a$ pour anodin) l'ensemble des $\mathscr{E}(X, J)$-morphismes de $E$ dans $F$.
 
-Notons pour tout objet $T$ de $X$ par $\mathbf{T}$, ou même $T$ s'il n'y a pas de confusion possible, le topos $X/T$. Le foncteur restriction pour les faisceaux de $A$-Modules induit de fa\c{c}on évidente un foncteur restriction
+Notons pour tout objet $T$ de $X$ par $T$, ou même $T$ s'il n'y a pas de confusion possible, le topos $X/T$. Le foncteur restriction pour les faisceaux de $A$-Modules induit de fa\c{c}on évidente un foncteur restriction
 $$
 \mathscr{E}(X, J) \to \mathscr{E}(T, J)
 $$
@@ -63,9 +62,9 @@ Proposition-définition {\bf 1.4}. --- \it Soit $E = (E_n)_{n \in \mathbf{N}}$ u
 \end{enumerate}
 }
 \vskip .3cm
-Preuve~: Pour voir l'équivalence de (i) et (ii), il suffit d'observer que pour tout $i \in I$, le faisceau image $U_i$ de $T_i$ par le morphisme canonique $T_i \to e_X$ est tel que le morphisme restriction
+Preuve. Pour voir l'équivalence de (i) et (ii), il suffit d'observer que pour tout $i \in I$, le faisceau image $U_i$ de $T_i$ par le morphisme canonique $T_i \to e_X$ est tel que le morphisme restriction
 $$
-\mathbf{U}_i \to \mathbf{T}_i
+U_i \to T_i
 $$
 soit fidèle.
 
@@ -115,7 +114,7 @@ Proposition {\bf 1.7}. --- \it Les propriétés suivantes sont de nature locale 
 \end{enumerate}
 }
 \vskip .3cm
-Preuve~: L'assertion (i) est immédiate. On en déduit (ii) en l'appliquant successivement à $\text{Im}(v \circ u)$ et à $\Ker(v)/\text{Im}(u)$. L'assertion (iii) est un cas particulier de (ii). Enfin (iv) s'obtient en appliquant (i) à $\text{Im}(v-u)$.
+Preuve. L'assertion $(i)$ est immédiate. On en déduit $(ii)$ en l'appliquant successivement à $\operatorname{Im}(v \circ u)$ et à $\Ker(v)/\operatorname{Im}(u)$. L'assertion $(iii)$ est un cas particulier de $(ii)$. Enfin $(iv)$ s'obtient en appliquant $(i)$ à $\operatorname{Im}(v-u)$.
 \vskip .3cm
 {
 Corollaire {\bf 1.7.1}. --- \it Soient $T$ et $T'$ deux objets de $X$ et $f: T \to T'$ un épimorphisme. Le foncteur
@@ -125,7 +124,7 @@ $$
 est fidèle.
 }
 \vskip .3cm
-Preuve~: Appliquer 1.7 (i) au topos $\mathbf{T}'$.
+Preuve. Appliquer 1.7 $(i)$ au topos $T'$.
 \vskip .3cm
 {
 Corollaire {\bf 1.7.2}. --- \it Soient $E$ et $F$ deux $A$-faisceaux sur $X$. Lorsque $T$ parcourt les objets de $X$, le préfaisceau
@@ -135,15 +134,9 @@ $$
 est séparé.
 }
 \vskip .3cm
-Preuve~: Simple traduction de 1.7 (iv).
+Preuve. Simple traduction de 1.7 $(iv)$.
 \vskip .3cm
-{\bf Remarque 1.7.3}. En général, le préfaisceau précédent n'est pas un faisceau. Nous verrons toutefois qu'il en est ainsi, à peu de choses près, lorsque le topos $X$ est noethérien (SGA4 VI 2.11), ou lorsque $E$ est de type $J$-adique (3).
-
-
-
-
-
-
+Remarque {\bf 1.7.3}. En général, le préfaisceau précédent n'est pas un faisceau. Nous verrons toutefois qu'il en est ainsi, à peu de choses près, lorsque le topos $X$ est noethérien (SGA4 VI 2.11), ou lorsque $E$ est de type $J$-adique (3).
 
 
 %End
