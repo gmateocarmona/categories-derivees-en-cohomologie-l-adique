@@ -18,7 +18,7 @@ c_\delta(M) \to c_\gamma(M).
 $$
 Ceci permet de définir une nouvelle catégorie, notée
 $$
-\bHom_1(\mathbf{N}^\circ, A-\Mod_X), \quad \text{comme suit}.
+{\bHom}_1(\mathbf{N}^\circ, A-\Mod_X), \quad \text{comme suit}.
 $$
 \begin{itemize}
     \item[(i)] Ses objets sont ceux de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$. 
@@ -30,7 +30,7 @@ $$
 \end{itemize}
 Il est clair qu'un morphisme de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$ définit un morphisme de $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$, d'où un foncteur ``projection''
 $$
-q: \bHom(\mathbf{N}^\circ, A-\Mod_X) \to \bHom_1(\mathbf{N}^\circ, A-\Mod_X),
+q: \bHom(\mathbf{N}^\circ, A-\Mod_X) \to {\bHom}_1(\mathbf{N}^\circ, A-\Mod_X),
 $$
 qui est une bijection sur les objets.
 \vskip .3cm
@@ -44,8 +44,8 @@ $$
 $$
 Ceci permet de définir une nouvelle catégorie $\mathscr{E}_1(X, J)$ comme suit.
 \begin{itemize}
-    \item[(i)] Ses objets sont ceux de $\mathscr{E}(X, J)$.
-    \item[(ii)] Si $M$ et $N$ sont deux objets de $\mathscr{E}(X, J)$, l'ensemble des $\mathscr{E}_1(X, J)$-morphismes de $M$ dans $N$ est
+    \item[$(i)$] Ses objets sont ceux de $\mathscr{E}(X, J)$.
+    \item[$(ii)$] Si $M$ et $N$ sont deux objets de $\mathscr{E}(X, J)$, l'ensemble des $\mathscr{E}_1(X, J)$-morphismes de $M$ dans $N$ est
     $$
     \Hom_1(M, N) = \varinjlim_\gamma \Hom(\chi_\gamma(M), N),
     $$
@@ -73,7 +73,7 @@ Enfin, on vérifie, comme dans (SGA5 V 2.4.1), que la famille des flèches canon
 Lemme {\bf 2.3}. --- \it La catégorie $\Hom_1(\mathbf{N}^\circ, A-\Mod_X)$ (resp. $\mathscr{E}_1(X, J)$) est abélienne et le foncteur $q$ est exact.
 }
 \vskip .3cm
-Preuve~: Montrons tout d'abord l'assertion non respée. Il est évident que la catégorie $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est additive et que le foncteur $q$ rend inversibles toutes les flèches canoniques de la forme $c_\gamma(M) \to M$. Si $u: P \to Q$ est un élément de $\Hom_1(P, Q)$, alors $u$ est la classe d'une flèche $f: c_\gamma (P) \to Q$ et, en notant $c: c_\gamma (P) \to P$ la flèche canonique, on a donc $u = q(f) \circ q(c)^{-1}$ ; par suite, toute flèche de $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est isomorphe à l'image par $q$ d'une flèche de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$. Il en résulte que pour voir que $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est abélienne, il suffit de montrer que le foncteur $q$ est exact. Soient donc $P$ et
+Preuve. Montrons tout d'abord l'assertion non respée. Il est évident que la catégorie ${\bHom}_1(\mathbf{N}^\circ, A-\Mod_X)$ est additive et que le foncteur $q$ rend inversibles toutes les flèches canoniques de la forme $c_\gamma(M) \to M$. Si $u: P \to Q$ est un élément de $\Hom_1(P, Q)$, alors $u$ est la classe d'une flèche $f: c_\gamma (P) \to Q$ et, en notant $c: c_\gamma (P) \to P$ la flèche canonique, on a donc $u = q(f) \circ q(c)^{-1}$ ; par suite, toute flèche de $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est isomorphe à l'image par $q$ d'une flèche de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$. Il en résulte que pour voir que $\bHom_1(\mathbf{N}^\circ, A-\Mod_X)$ est abélienne, il suffit de montrer que le foncteur $q$ est exact. Soient donc $P$ et
 $$
 0 \to M' \to M \to M'' \to 0
 $$
@@ -89,7 +89,7 @@ $$
 $$
 sont exactes, d'où l'assertion. L'assertion respée se voit de fa\c{c}on analogue; en fait, on montre en même temps que le foncteur d'inclusion
 $$
-\mathscr{E}_1(X, J) \to \bHom_1(\mathbf{N}^\circ, A-\Mod_X)
+\mathscr{E}_1(X, J) \to {\bHom}_1(\mathbf{N}^\circ, A-\Mod_X)
 $$
 est exact
 \vskip .3cm
@@ -99,7 +99,7 @@ $$
 $$
 qui ne dépend que de la classe de $f$ dans $\Hom_1(P, Q)$. On définit ainsi un foncteur
 $$
-\rho: \bHom_1(\mathbf{N}^\circ, A-\Mod_X) \to \Pro(A-\Mod_X),
+\rho: {\bHom}_1(\mathbf{N}^\circ, A-\Mod_X) \to \Pro(A-\Mod_X),
 $$
 d'où un foncteur
 $$
@@ -111,13 +111,13 @@ obtenu par restriction de $\rho$ à $\mathscr{E}_1(X, J)$.
 Lemme {\bf 2.5}. --- \it Les foncteurs $\rho$ et $\delta$ ci-dessus sont des injections sur les objets et sont pleinement fidèles.
 }
 \vskip .3cm
-Preuve~: Il suffit de le voir pour $\rho$. Dans ce cas, la seule assertion non tautologique est que $\rho$ est pleinement fidèle. Soient donc $P$ et $Q$ deux objets de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$, et montrons que l'application canonique
+Preuve. Il suffit de le voir pour $\rho$. Dans ce cas, la seule assertion non tautologique est que $\rho$ est pleinement fidèle. Soient donc $P$ et $Q$ deux objets de $\bHom(\mathbf{N}^\circ, A-\Mod_X)$, et montrons que l'application canonique
 $$
 \varinjlim_\gamma \Hom(c_\gamma(P), Q) \to \varprojlim_n \varinjlim_m \Hom(P_m, Q_n)
 $$
 est bijective.
-
-{\bf Elle est injective}.  Soient $\gamma$ et $\gamma'$ deux applications croissantes $\geq \id$ de $\mathbf{N}$ dans $\mathbf{N}$, et
+\vskip .3cm
+\emph{Elle est injective}.  Soient $\gamma$ et $\gamma'$ deux applications croissantes $\geq \id$ de $\mathbf{N}$ dans $\mathbf{N}$, et
 $$
 f: c_\gamma(P) \to Q \quad \text{et} \quad f': c_{\gamma'}(P) \to Q
 $$
@@ -141,16 +141,16 @@ $$
 P_{\gamma''(n)} \xlongrightarrow{\can} P_{\gamma'(n)} \xlongrightarrow{f'_n} Q_n
 $$
 sont égaux.
-
-{\bf Elle est surjective}. Soient donnés
+\vskip .3cm
+\emph{Elle est surjective}. Soient donnés
 \begin{itemize}
-    \item[a)] Une application $\theta: \mathbf{N} \to \mathbf{N}$.
-    \item[b)] Une application $\lambda: \mathbf{N} \times \mathbf{N} \to \mathbf{N}$ vérifiant 
+    \item[$a)$] Une application $\theta: \mathbf{N} \to \mathbf{N}$.
+    \item[$b)$] Une application $\lambda: \mathbf{N} \times \mathbf{N} \to \mathbf{N}$ vérifiant 
     $$
     \lambda(j, k) \geq \max (\theta(j), \theta(k))
     $$
     pour tout couple $(j, k)$.
-    \item[c)] Pour tout entier $j$, un morphisme
+    \item[$c)$] Pour tout entier $j$, un morphisme
     $$
     \xi_j: P_{\theta(j)} \to Q_j
     $$
@@ -193,7 +193,7 @@ avec $\overline{q}$ un foncteur exact et $\pi_X$ le foncteur canonique de passag
 Lemme {\bf 2.7}. --- \it Le foncteur $\overline{q}$ ci-dessus est un isomorphisme de catégories.
 }
 \vskip .3cm
-Preuve~: Tenant compte de l'interprétation de $\mathscr{E}_1(X, J)$ comme catégorie de fractions (2.2), il s'agit de voir que si $C$ est une catégorie abélienne et
+Preuve. Tenant compte de l'interprétation de $\mathscr{E}_1(X, J)$ comme catégorie de fractions (2.2), il s'agit de voir que si $C$ est une catégorie abélienne et
 $$
 F: \mathscr{E}(X, J) \to C
 $$
@@ -207,7 +207,7 @@ Si $M$ est un $A$-faisceau essentiellement nul, il existe une application croiss
 Si $P$ et $Q$ sont définis par l'exactitude de la suite
 $0 \to P \to \chi_\gamma(M) \xlongrightarrow{\can} M \to Q \to 0$, il est immédiat que les morphismes canoniques $\chi_\gamma(P) \to P$ et $\chi_\gamma(Q) \to Q$ sont nuls, d'où aussitôt l'assertion.
 \vskip .3cm
-{\bf Remarque 2.7.1}. Plus généralement, l'argument précédent montre, sans hypothèse sur $X$, que $\mathscr{E}_1(X, J)$ est la catégorie abélienne quotient de $\mathscr{E}(X, J)$ par la sous-catégorie, abélienne engendrée par les $A$-faisceaux essentiellement nuls. On en déduit grâce à la description des morphismes d'une catégorie abélienne quotient, que tout morphisme (resp. isomorphisme) de $A-\fsc(X)$ est localement l'image d'un morphisme de $\mathscr{E}(X, J)$.
+Remarque {\bf 2.7.1}. Plus généralement, l'argument précédent montre, sans hypothèse sur $X$, que $\mathscr{E}_1(X, J)$ est la catégorie abélienne quotient de $\mathscr{E}(X, J)$ par la sous-catégorie, abélienne engendrée par les $A$-faisceaux essentiellement nuls. On en déduit grâce à la description des morphismes d'une catégorie abélienne quotient, que tout morphisme (resp. isomorphisme) de $A-\fsc(X)$ est localement l'image d'un morphisme de $\mathscr{E}(X, J)$.
 \vskip .3cm
 {
 Proposition {\bf 2.8}. --- \it Soit $(X, A, J)$ un idéotope. On suppose que l'objet final de $X$ est quasicompact. Alors le foncteur canonique
@@ -217,9 +217,9 @@ $$
 induit un isomorphisme de $A-\fsc(X)$ sur la sous-catégorie pleine de $\Pro(A-\Mod_X)$ engendrée par les $A$-faisceaux.
 }
 \vskip .3cm
-Preuve~: Résulte immédiatement de (2.5) et (2.7).
+Preuve. Résulte immédiatement de (2.5) et (2.7).
 \vskip .3cm
-{\bf Remarques 2.8.1}. La proposition précédente s'applique notamment lorsque $X$ est le topos ponctuel.
+Remarques {\bf 2.8.1}. La proposition précédente s'applique notamment lorsque $X$ est le topos ponctuel.
 \vskip .3cm
 {\bf 2.8.2}. La preuve qu'on a donnée de (2.8) n'utilise pas le fait que la catégorie des pro-objets d'une catégorie abélienne, et il ne semble pas que l'utilisation de ce fait apporte des simplifications notables.
 
@@ -239,26 +239,20 @@ $$
 est un \emph{faisceau}.
 }
 \vskip .3cm
-Preuve~: On est ramené à voir que si $T$ est un objet noethérien de $X$ et $(T_i \to T)_{i \in I}$ est un recouvrement \emph{fini} de $T$ par des objets noethériens, alors la suite canonique
+Preuve. On est ramené à voir que si $T$ est un objet noethérien de $X$ et $(T_i \to T)_{i \in I}$ est un recouvrement \emph{fini} de $T$ par des objets noethériens, alors la suite canonique
 $$
 0 \to \varinjlim_\gamma \Hom_a(\chi_\gamma (E)|T, F|T) \to \prod \varinjlim_\gamma \Hom_a(\chi_\gamma(E)|T, F|T),
 $$
 $$
 \prod_j \varinjlim_\gamma \Hom_a(\chi_\gamma (E)| T_i \times_T T_j, F|T_i \times_T T_j)
 $$
-est exacte (2.7). Comme les produits finis sont des sommes directes et les limites inductives filtrantes de groupes abéliens sont exactes, l'assertion résulte de l'exactitude des suites canoniques 
+est exacte {\bf (2.7)}. Comme les produits finis sont des sommes directes et les limites inductives filtrantes de groupes abéliens sont exactes, l'assertion résulte de l'exactitude des suites canoniques 
 $$
 0 \to \Hom_a(\chi_\gamma (E) | T, F|T) \to \prod_i \Hom_a(\chi_\gamma(E)|T_i, F|T_i) \to 
 $$
 $$
 \to \prod_{i, j} \Hom_a(\chi_\gamma (E) | T_i \times_T T_j, F|T_i \times_T T_j).
 $$
-
-
-
-
-
-
 
 
 % End
