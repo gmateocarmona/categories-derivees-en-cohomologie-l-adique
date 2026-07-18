@@ -49,7 +49,7 @@ Proposition {\bf 3.2}. --- \it Soit $X$ un schéma de type fini sur $\mathbf{F}_
 \end{enumerate}
 }
 \vskip .3cm
-Preuve~: Immédiat à partir des assertions analogues pour les objets de cohomologie (SGA5 XV 3.1).
+Preuve. Immédiat à partir des assertions analogues pour les objets de cohomologie (SGA5 XV {\bf 3.1}).
 \vskip .3cm
 {
 Proposition {\bf 3.3}. --- \it Soient $X$ un schéma de type fini sur $\mathbf{F}_p$, $g: X \to \mathbf{F}_p$ le morphisme structural et $E \in \D^b_c(X, \mathbf{Q}_\ell)$. Alors
@@ -59,7 +59,7 @@ $$
 En particulier, $L_E$ est une fraction rationnelle.
 }
 \vskip .3cm
-Preuve~: On peut supposer que $E$ est un $\mathbf{Q}_\ell$-faisceau constructible, et alors l'assertion n'est autre que (SGA5 XV 3.2).
+Preuve. On peut supposer que $E$ est un $\mathbf{Q}_\ell$-faisceau constructible, et alors l'assertion n'est autre que (SGA5 XV {\bf 3.2}).
 \vskip .3cm
 {
 Corollaire {\bf 3.4}. --- \it Soit $h: X \to S$ un morphisme de schémas de type fini sur $\mathbf{F}_p$. Pour tout $E \in \D^b_c(X, \mathbf{Q}_\ell)$, on a
@@ -68,7 +68,7 @@ L_E = L_{\bRd h_! (E)}.
 $$
 }
 \vskip .3cm
-Nous allons maintenant déduire de (3.3) une \emph{équation fonctionnelle} pou les fonctions $L$, du moins si $X$ est projectif sur $\mathbf{F}_p$.
+Nous allons maintenant déduire de ({\bf 3.3}) une \emph{équation fonctionnelle} pou les fonctions $L$, du moins si $X$ est projectif sur $\mathbf{F}_p$.
 \vskip .3cm
 {
 Définition {\bf 3.5}. --- \it Soient $g: X \to \mathbf{F}_p$ un schéma de type fini sur $\mathbf{F}_p$, et $\overline{X} = X \times_{\mathbf{F}_p} \overline{\mathbf{F}}_p$. Pour tout $E \in \D^b_c(X, \mathbf{Q}_\ell)$, on pose  
@@ -110,7 +110,7 @@ L_{\D_X(E)}(t) = (-t)^{-\chi(E)} \delta(E) L_E(t^{-1}).
 $$
 }
 \vskip .3cm
-Preuve~: Le second membre a un sens d'après (3.3). Posons $S = \Spec \mathbf{F}_p$ et $\D_S = \bRd {\cHom}_{\mathbf{Q}_\ell}(. , \mathbf{Q}_\ell)$. D'après (2.3.2 a)), on a 
+Preuve. Le second membre a un sens d'après ({\bf 3.3}). Posons $S = \Spec \mathbf{F}_p$ et $\D_S = \bRd {\cHom}_{\mathbf{Q}_\ell}(. , \mathbf{Q}_\ell)$. D'après ({\bf 2.3.2} a)), on a 
 $$
 \bRd g_* (\D_X E) \isomlong \D_S \bRd g_* (E),
 $$
@@ -127,16 +127,16 @@ L_{\D_S(F)}(t) = (-t)^{\chi(F)} \delta(F) L_F(t^{-1}).
 $$
 }
 \vskip .3cm
-D'après les propriétés d'additivité et de multiplicativité (3.5.1) et (3.5.2), on peut supposer que $F \in \mathbf{Q}_\ell-\fscn (S)$. Alors $F$ correspond (SGA5 VII 1.4.2) à un $\mathbf{Q}_\ell$-espace vectoriel de dimension finie $V$ muni d'une opération continue $f_V$ du Frobenius, et le $\mathbf{Q}_\ell$-faisceau $\D_S (F) = {\cHom}_{\mathbf{Q}_\ell}(F, \mathbf{Q}_\ell)$ correspond (II 1.26) au $\mathbf{Q}_\ell$-espace vectoriel $V^{\vee}$ muni de l'opération continue $(f^{\vee}_V)^{-1}$ du Frobenius. Il suffit alors de montrer que, étant donnés un corps $K$, un $K$-espace vectoriel de dimension finie $V$ et un automorphisme $u$ de $V$, on a l'identité
+D'après les propriétés d'additivité et de multiplicativité ({\bf 3.5.1}) et ({\bf 3.5.2}), on peut supposer que $F \in \mathbf{Q}_\ell-\fscn (S)$. Alors $F$ correspond (SGA5 VII {\bf 1.4.2}) à un $\mathbf{Q}_\ell$-espace vectoriel de dimension finie $V$ muni d'une opération continue $f_V$ du Frobenius, et le $\mathbf{Q}_\ell$-faisceau $\D_S (F) = {\cHom}_{\mathbf{Q}_\ell}(F, \mathbf{Q}_\ell)$ correspond (II {\bf 1.26}) au $\mathbf{Q}_\ell$-espace vectoriel $V^{\vee}$ muni de l'opération continue $(f^{\vee}_V)^{-1}$ du Frobenius. Il suffit alors de montrer que, étant donnés un corps $K$, un $K$-espace vectoriel de dimension finie $V$ et un automorphisme $u$ de $V$, on a l'identité
 $$
 1/\det(1 - u^{-1} t) = (-t)^{-\text{dim}(V)} \det(u)/\det(1 - ut^{-1})
 \leqno{(3.8)}
 $$
-dans $K(t)$. On peut pour cela supposer $K$ algébriquement clos, donc $u$ triangulable, puis, grâce aux propriétés de multiplicativité du déterminant, que dim$(V) = 1$. Alors $u$ est l'homothétie définie par un scalaire non nul $\lambda$, et (3.8) est l'identité évidente
+dans $K(t)$. On peut pour cela supposer $K$ algébriquement clos, donc $u$ triangulable, puis, grâce aux propriétés de multiplicativité du déterminant, que dim$(V) = 1$. Alors $u$ est l'homothétie définie par un scalaire non nul $\lambda$, et ({\bf 3.8}) est l'identité évidente
 $$
 1/(1-(t/\lambda)) = (-\lambda/t)/(1-(\lambda/t)).
 $$
-Bien entendu, la formule (3.6) ne présente d'intérêt en pratique que si l'on dispose d'une expression simple pour $\D_X(E)$. Nous allons maintenant donner des cas où il en est ainsi.
+Bien entendu, la formule ({\bf 3.6}) ne présente d'intérêt en pratique que si l'on dispose d'une expression simple pour $\D_X(E)$. Nous allons maintenant donner des cas où il en est ainsi.
 \vskip .3cm
 {
 Proposition {\bf 3.9}. --- \it On suppose $X$ quasiprojectif, lisse et purement de dimension $n$ sur $\mathbf{F}_p$. Posant pour tout $E \in \D^b_c(X, \mathbf{Q}_\ell)$
@@ -154,7 +154,7 @@ dans chacun des cas suivants
 \end{enumerate}
 }
 \vskip .3cm
-Preuve~: Comme $\D_X(E) = \bRd {{\cHom}}_{\mathbf{Q}_\ell}(E, \mathbf{Q}_\ell(n))[2n]$, le cas (i) résulte du lemme suivant.
+Preuve. Comme $\D_X(E) = \bRd {{\cHom}}_{\mathbf{Q}_\ell}(E, \mathbf{Q}_\ell(n))[2n]$, le cas $(i)$ résulte du lemme suivant.
 \vskip .3cm
 {
 Lemme {\bf 3.9.1}. --- \it Étant donnés un schéma noethérien $X$, $F \in \mathbf{Q}_\ell-\fsct(X)$ et $G \in \mathbf{Q}_\ell-\fscn(X)$, on a:
@@ -163,18 +163,18 @@ $$
 $$
 }
 \vskip .3cm
-Il s'agit de voir que si $F \in \mathbf{Z}_\ell-\fsct(X)$ et $G \in \mathbf{Z}_\ell-\fscn(X)$, les $\mathbf{Z}_\ell$-faisceaux $\cExt^j_{\mathbf{Z}_\ell}(F, G)$ $(j \geq 1)$ sont annulés par une puissance de $\ell$. D'après (I 6.4.2) et (II 1.2.1), on peut, quitte à se restreindre à des parties localement fermées convenables de $X$, supposer que $G \in \mathbf{Z}_\ell-\fsct(X)$. Alors, compte tenu de (II 1.26), l'assertion résulte de l'assertion analogue, bien connue, pour les $\mathbf{Z}_\ell$--Modules de type fini. Montrons (ii). 
+Il s'agit de voir que si $F \in \mathbf{Z}_\ell-\fsct(X)$ et $G \in \mathbf{Z}_\ell-\fscn(X)$, les $\mathbf{Z}_\ell$-faisceaux $\cExt^j_{\mathbf{Z}_\ell}(F, G)$ $(j \geq 1)$ sont annulés par une puissance de $\ell$. D'après (I {\bf 6.4.2}) et (II {\bf 1.2.1}), on peut, quitte à se restreindre à des parties localement fermées convenables de $X$, supposer que $G \in \mathbf{Z}_\ell-\fsct(X)$. Alors, compte tenu de (II {\bf 1.26}), l'assertion résulte de l'assertion analogue, bien connue, pour les $\mathbf{Z}_\ell$--Modules de type fini. Montrons $(ii)$. 
 
 Il s'agit de voir que
 $$
 P^j = {\cExt}^j_{\mathbf{Q}_\ell}(E, \mathbf{Q}_\ell(1)) = 0 \quad (j \geq 1).
 $$
-Comme $M$ est constante tordu constructible, il résulte du cas (i) que $P^j | U = 0$. Il nous suffit donc de voir que pour tout point fermé $x$ de $Y = X - U$ et tout point géométrique $\overline{x}$ au-dessus de $x$, on a $P^j_x = 0$. Le pendant pour les $\mathbf{Q}_\ell$-faisceaux de la variante (SGA5 I 4.6.2) du théorème de dualité locale fournit un accouplement parfait
+Comme $M$ est constante tordu constructible, il résulte du cas $(i)$ que $P^j | U = 0$. Il nous suffit donc de voir que pour tout point fermé $x$ de $Y = X - U$ et tout point géométrique $\overline{x}$ au-dessus de $x$, on a $P^j_x = 0$. Le pendant pour les $\mathbf{Q}_\ell$-faisceaux de la variante (SGA5 I {\bf 4.6.2}) du théorème de dualité locale fournit un accouplement parfait
 $$
 {\cExt}^j_{\mathbf{Q}_\ell}(E, \mathbf{Q}_\ell(1)) \times \bH^{2-j}_{\overline{x}}(E) \to \mathbf{Q}_{\ell},
 \leqno{(3.9.2)}
 $$
-avec (SGA5 I 4.5.1)
+avec (SGA5 I {\bf 4.5.1})
 $$
 \bH^{2-j}_{\overline{x}}(E) = (\bH^{2-j}_x(E))_{\overline{x}}.
 $$
@@ -182,18 +182,18 @@ Comme le morphisme d'adjonction canonique
 $$
 E \to i_* i^* (E)
 $$
-est un isomorphisme, il résulte de la première suite exacte de (SGA4 V 4.5) que 
+est un isomorphisme, il résulte de la première suite exacte de (SGA4 V {\bf 4.5}) que 
 $$
 \bH^0_x(E) = \bH^1_x(E) = 0,
 $$
 d'où aussitôt le résultat annoncé.
 
-Ceci dit, lorsque $X$ est projectif sur $\mathbf{F}_\ell$, la formule (3.6) prend la forme
+Ceci dit, lorsque $X$ est projectif sur $\mathbf{F}_\ell$, la formule ({\bf 3.6}) prend la forme
 $$
 L_{E^\vee}(p^{-n} t) = (-1)^{- \chi (E)} \delta(E) L_E (t^{-1}),
 \leqno{(3.10)}
 $$
-dans chacun des cas de (3.9). Compte tenu de (3.2 a)), cela résulte du lemme suivant.
+dans chacun des cas de ({\bf 3.9}). Compte tenu de ({\bf 3.2} a)), cela résulte du lemme suivant.
 \vskip .3cm
 {
 Lemme {\bf 3.11}. --- \it Soient $X$ un schéma de type fini sur $\mathbf{F}_p$, et $F \in \D^b_c(X, \mathbf{Q}_\ell)$. Posant $F(j) = F \otimes \mathbf{Q}_\ell (j)$ $(j \in \mathbf{Z})$, on a la relation
@@ -202,13 +202,13 @@ L_{F(j)}(t) = L_F (p^{-j} t).
 $$
 }
 \vskip .3cm
-D'après les propriétés de multiplicativité (3.2 a)), on peut pour le voir supposer que $F$ est un $\mathbf{Q}_\ell$-faisceau constructible; alors, comme le Frobenius opère sur $\mathbf{Q}_\ell(j) \isom \mathbf{Q}_\ell$ (non canoniquement) par l'homothétie de rapport $p^{-j}$, l'assertion est immédiate sur la définition (3.0).
+D'après les propriétés de multiplicativité ({\bf 3.2} a)), on peut pour le voir supposer que $F$ est un $\mathbf{Q}_\ell$-faisceau constructible; alors, comme le Frobenius opère sur $\mathbf{Q}_\ell(j) \isom \mathbf{Q}_\ell$ (non canoniquement) par l'homothétie de rapport $p^{-j}$, l'assertion est immédiate sur la définition ({\bf 3.0}).
 
 Supposons maintenant qu'on ait de plus un isomorphisme
 $$
 E^\vee \isomlong E(\rho) \quad \text{pour un}~\rho \in \mathbf{Z}.
 $$
-Alors la formule (3.10) prend la forme
+Alors la formule ({\bf 3.10}) prend la forme
 $$
 L_E (p^{-n-\rho}t) = (-t)^{-\chi(E)}\delta(E) L_E(t^{-1}),
 $$
@@ -218,10 +218,10 @@ L_E(1/qt) = (-t)^{\chi(E)}\delta(E)L_E(t).
 \leqno{(3.12)}
 $$
 \vskip .3cm
-{\bf Remarque 3.13}. Sous les hypothèses de (3.9), l'existence d'un tel entier $p$ est assurée dans les cas suivants
+Remarque {\bf 3.13}. Sous les hypothèses de (3.9), l'existence d'un tel entier $p$ est assurée dans les cas suivants
 \begin{enumerate}
-    \item[cas~(i)] $E \isomlong \mathbf{Q}_\ell(m)$ \quad pour un $m \in \mathbf{Z}$, et alors $\rho = -2m$.
-    \item[cas~(ii)] $M \isomlong \mathbf{Q}_\ell(m)$ \quad pour un $m \in \mathbf{Z}$, et alors $\rho = -2m$.
+    \item[cas~$(i)$] $E \isomlong \mathbf{Q}_\ell(m)$ \quad pour un $m \in \mathbf{Z}$, et alors $\rho = -2m$.
+    \item[cas~$(ii)$] $M \isomlong \mathbf{Q}_\ell(m)$ \quad pour un $m \in \mathbf{Z}$, et alors $\rho = -2m$.
 \end{enumerate}
 (Pour ce dernier cas, il est immédiat que
 $$
@@ -240,24 +240,16 @@ $$
 $$
 }
 \vskip .3cm
-Preuve~: La substitution $t \mapsto 1/qt$ dans (3.12) fournit l'équation fonctionnelle
+Preuve. La substitution $t \mapsto 1/qt$ dans ({\bf 3.12}) fournit l'équation fonctionnelle
 $$
 L_E(t) = (-1/qt)^{\chi(E)}\delta(E)L_E(1/qt).
 \leqno{(3.12~\text{bis})}
 $$
-Multipliant (3.12) et (3.12 bis) membre à membre, on obtient l'identité 
+Multipliant ({\bf 3.12}) et ({\bf 3.12} bis) membre à membre, on obtient l'identité 
 $$
 L_E(t)L_E(1/qt) = q^{-\chi(E)}(\delta(E))^2 L_E(t) L_E(1/qt),
 $$
-d'où aussitôt la relation désirée, compte tenu du fait que $L_E$ n'est pas identiquement nulle, comme il est clair sur sa définition (3.0).
-
-
-
-
-
-
-
-
+d'où aussitôt la relation désirée, compte tenu du fait que $L_E$ n'est pas identiquement nulle, comme il est clair sur sa définition ({\bf 3.0}).
 
 
 % End
